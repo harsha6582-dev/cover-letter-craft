@@ -33,9 +33,10 @@ const plans = [
       "Generation history",
       "Priority support",
     ],
-    cta: "Go Pro",
-    variant: "accent" as const,
+    cta: "Coming Soon",
+    variant: "outline" as const,
     highlighted: true,
+    upcoming: true,
   },
 ];
 
