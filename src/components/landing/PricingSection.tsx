@@ -67,7 +67,7 @@ const PricingSection = () => {
               {plan.highlighted && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="px-4 py-1 bg-accent text-accent-foreground text-sm font-semibold rounded-full">
-                    Most Popular
+                    {(plan as any).upcoming ? "Coming Soon" : "Most Popular"}
                   </span>
                 </div>
               )}
@@ -92,8 +92,13 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button variant={plan.variant} size="lg" className="w-full" asChild>
-                <Link to="/app">{plan.cta}</Link>
+              <Button
+                variant={plan.variant}
+                size="lg"
+                className="w-full"
+                disabled={(plan as any).upcoming}
+              >
+                {plan.cta}
               </Button>
             </div>
           ))}
