@@ -40,11 +40,9 @@ const PaywallModal = ({ open, onClose }: PaywallModalProps) => {
         </div>
 
         <div className="flex flex-col gap-3">
-          <Button variant="accent" size="lg" className="w-full" asChild>
-            <Link to="/pricing">
-              <Sparkles className="w-4 h-4" />
-              Upgrade to Pro - $7/month
-            </Link>
+          <Button variant="outline" size="lg" className="w-full" disabled>
+            <Sparkles className="w-4 h-4" />
+            Pro Plan — Coming Soon
           </Button>
           <Button variant="ghost" onClick={onClose}>
             Maybe later

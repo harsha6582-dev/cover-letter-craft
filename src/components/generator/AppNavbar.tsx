@@ -34,8 +34,8 @@ const AppNavbar = ({ generationsUsed, maxFreeGenerations }: AppNavbarProps) => {
               {generationsUsed}/{maxFreeGenerations} used
             </span>
           </div>
-          <Button variant="accent" size="sm" asChild>
-            <Link to="/pricing">Upgrade to Pro</Link>
+          <Button variant="outline" size="sm" disabled>
+            Pro — Coming Soon
           </Button>
         </div>
       </div>
